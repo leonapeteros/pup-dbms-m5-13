@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <script type="text/javascript" src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    </head>
+    <body>
+        <div class='main'>
+            <h1>PUP Thesis Library</h1>
+            <div class='form-section'>
+                <!-- your form here -->
+                <h1 class='form-title'>Edit Thesis Entry</h1>
+                <form class='create-form' action = '/edit/{{thesis.key.id()}}' method = 'post'>
+                    Year: <select name = 'thesis_year'>
+                        <option value = "2011">2011</option>
+                        <option value = "2012">2012</option>
+                        <option value = "2013">2013</option>
+                        <option value = "2014">2014</option>
+                        <option value = "2015">2015</option>
+                        <option selected = "{{thesis.thesis_year}}">{{thesis.thesis_year}}</option>
+                    </select><br>
+                    <br><input type='text' name = 'thesis_title' value = '{{thesis.thesis_title}}'/> <br>
+                    <br>Abstract: <textarea name = 'thesis_abstract' rows = "8" cols = "52">{{thesis.thesis_abstract}}</textarea><br>
+                    <br><input type='text' name = 'thesis_adviser' value = '{{thesis.thesis_adviser}}'> <br>
+                    <br>Section: <select name = 'thesis_section' value = '{{thesis.thesis_section}}'>
+                        <option value = "1">1</option>
+                        <option value = "2">2</option>
+                        <option value = "3">3</option>
+                        <option value = "4">4</option>
+                        <option value = "5">5</option>
+                        <option selected = "{{thesis.thesis_section}}">{{thesis.thesis_section}}</option>
+                    </select><br>
+                    <input type='submit' value='Re-Submit Thesis'></input><br>
+                    <p align="right"><a class = 'cancel-btn' href = "/"><button type=\"submit\">Cancel</button></a></p>
+                </form>
+            </div>
+        </div>
+
+
+        
+    </body>
+</html>

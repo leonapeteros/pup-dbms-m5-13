@@ -1,0 +1,32 @@
+body {
+    background-color: blue;
+}
+
+.main {
+    width: 400px;
+    margin: auto;
+}
+h1{
+    color: yellow;
+    position: relative;
+    left: -250px;
+
+}
+
+form input[type=text] {
+    width: 100%;
+    margin-top: 5px;
+    line-height: 20px;
+    color: pink;
+}
+form input[type=submit] {
+    margin-top: 10px;
+    position: relative;
+    float: right;
+}
+/*.cancel-btn {
+    margin-top: 10px;
+    margin-left: 
+    position: relative;
+    float: right;
+}*/

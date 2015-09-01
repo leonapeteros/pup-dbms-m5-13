@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <script type="text/javascript" src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    </head>
+    <body>
+        <div class='main'>
+            <h1>PUP Thesis Compilations</h1>
+            <p style="position: relative;
+    left: -250px;">Hello {{user.nickname()}}!</p>
+            <p><a href = "{{url|safe}}"><button type=\"submit\" style="position: relative;
+    top: -35px;
+    left: -50px;">{{url_linktext}}</button></a></p>
+            <div class='form-section'>
+                <!-- your form here -->
+                <h1 class='form-title'>New Thesis Entry</h1>
+                <form class='create-form'>
+                    Year: <select name = 'thesis_year'>
+                        <option value = "2011">2011</option>
+                        <option value = "2012">2012</option>
+                        <option value = "2013">2013</option>
+                        <option value = "2014">2014</option>
+                        <option value = "2015">2015</option>
+                    </select><br>
+                    <br><input type='text' name = 'thesis_title' placeholder='Thesis Title'/> <br>
+                    <br>Abstract: <textarea name = 'thesis_abstract' rows = "8" cols = "52"></textarea><br>
+                    <br><input type='text' name = 'thesis_adviser' placeholder='Thesis Adviser'> <br>
+                    <br>Section: <select name = 'thesis_section'>
+                        <option value = "1">1</option>
+                        <option value = "2">2</option>
+                        <option value = "3">3</option>
+                        <option value = "4">4</option>
+                        <option value = "5">5</option>
+                    </select><br>
+                    <input type='submit' value='Submit Thesis'></input><br>
+                </form>
+            </div>
+            <div class='list-section'>
+                <!-- your list here -->
+                <h1>Existing Thesis</h1>
+                <ul class='thesis-list'>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src='/static/script.js'></script>
+    </body>
+</html>

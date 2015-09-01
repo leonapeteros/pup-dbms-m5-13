@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <script type="text/javascript" src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    </head>
+    <body>
+        <center><h1>Hello!</h1>
+        <p>Please register!</p>
+        <form class = 'registration-form'>
+            <input text = 'text' name = 'first_name' placeholder = 'First Name'/><br>
+           <br><input text = 'text' name = 'last_name' placeholder = 'Last Name'/><br>
+           <br><input text = 'text' name = 'contact_number' placeholder = 'Contact Number'/><br></center>
+           <center><br><input type = 'submit' value = 'Register'/><br></center>
+        </form>
+        <br><center><p>logout to cancel registration</p></center>
+        <center><a href = "{{url|safe}}"><button type=\"submit\">{{url_linktext}}</button></a></center>
+
+    <script type="text/javascript" src='/static/script.js'></script>
+    </body>
+</html>
